@@ -1,0 +1,19 @@
+<VirtualHost *:80>
+  ServerName <%= @params[:server_name] %>
+  DocumentRoot <%= @params[:docroot] %>
+
+  RailsBaseURI /
+  RailsEnv <%= @params[:rails_env] %>
+  PassengerDefaultUser <%= node[:apache][:user] %>
+
+  <Directory <%= @params[:docroot] %>>
+    Options FollowSymLinks
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+  LogLevel info
+  ErrorLog <%= node[:redmine][:install_path] %>/log/apache-error.log
+  CustomLog <%= node[:redmine][:install_path] %>/log/apache-access.log combined
+</VirtualHost>

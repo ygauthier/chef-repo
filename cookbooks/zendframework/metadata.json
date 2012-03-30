@@ -1,0 +1,46 @@
+{
+  "conflicting": {
+  },
+  "license": "All rights reserved",
+  "providing": {
+  },
+  "recipes": {
+    "zendframework::default": "Runs zendframework::install",
+    "zendframework::install": "Installs the Zend Framework"
+  },
+  "maintainer": "Ryan J. Geyer",
+  "replacing": {
+  },
+  "maintainer_email": "me@ryangeyer.com",
+  "description": "Installs/Configures app_zendframework",
+  "version": "0.0.1",
+  "groupings": {
+  },
+  "attributes": {
+    "zendframework/version": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": "1.11.1",
+      "type": "string",
+      "recipes": [
+
+      ]
+    }
+  },
+  "recommendations": {
+  },
+  "dependencies": {
+  },
+  "platforms": {
+    "ubuntu": [
+
+    ]
+  },
+  "name": "zendframework",
+  "suggestions": {
+  },
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n"
+}

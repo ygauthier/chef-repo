@@ -1,0 +1,6 @@
+default[:fuse][:version] = "2.8.7"
+default[:s3fs][:version] = "1.61"
+default[:s3fs][:mount] = "/mnt/s3"
+default[:s3][:access_key] = "mykey"
+default[:s3][:secret_key] = "mysecret"
+default[:s3][:bucket] = "mybuckets"
